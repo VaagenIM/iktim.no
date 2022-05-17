@@ -6,7 +6,7 @@ name: CI
 # documentation.
 
 env:
-  docker-container: ${{ github.repository }}
+  docker-container: ${{ github.repository | lower }}
   platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
 
 on:
