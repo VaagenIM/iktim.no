@@ -1,0 +1,26 @@
+- var homepage = true
+
+doctype html
+html(lang="no")
+  head
+    include templates/head.pug
+  block head
+    script(src="./js/lottie-player.js")
+
+  body.particleZone
+    #grid-center
+      center#grid-center-content
+        section#content
+          a(href="/")
+            h1#logo.ff-logo IM
+          #spacing.hide_mobile
+          lottie-player.lottie300(src="https://assets6.lottiefiles.com/packages/lf20_1LhsaB.json" loop autoplay)
+          #spacing.hide_mobile
+          h1 Velkommen til 1IM's hjemmeside hos Vågen VGS!
+        .navbar
+          include templates/nav.pug
+        footer
+          include templates/footer.pug
+    #particles-js
+      script(src="js/particles.js")
+      script(src="js/particles-app.js")
