@@ -2,7 +2,7 @@
 Kildekoden til https://iktim.no
 
 Kjøres via docker:
-`docker run -d -p 80:80 ghcr.io/vaagenim/iktim.no:main`
+`docker run -d -p 80:80 ghcr.io/vaagenim/iktim.no`
 
 ## Utvikling
 Last ned kildekoden og åpne `src` i din IDE.
