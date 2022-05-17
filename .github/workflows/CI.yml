@@ -6,6 +6,7 @@ name: CI
 # documentation.
 
 env:
+  docker-container: ${{ github.repository }}
   platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
 
 on:
@@ -44,6 +45,7 @@ jobs:
           echo ::set-output name=commit::${GITHUB_SHA}
           echo ::set-output name=build_date::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
           echo ::set-output name=docker_platforms::${{ env.platforms }}
+          echo ::set-output name=docker_image::${{ env.docker-container }}
       - name: Set Up QEMU
         uses: docker/setup-qemu-action@v1
 
