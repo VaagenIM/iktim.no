@@ -64,11 +64,6 @@ footer a:hover {
   color: var(--color-ff-link-hover);
 }
 
-.lottie300 {
-  width: 200px;
-  height: auto;
-}
-
 #logo {
   user-select: none;
   background-color: var(--md-222);
